@@ -36,7 +36,8 @@ function getInputValue() {
 
     n1 = n2;
     n2 = nextTerm;
-    nextTerm = n1 + n2;
+    nextTerm = n1 + n2;    
   }
 }
 // });
+// ddsf
