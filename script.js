@@ -1,16 +1,3 @@
-// program to generate fibonacci series up to a certain number
-
-// take input from the user
-
-// function getInputValue(){
-//     // Selecting the input element and get its value
-//     var inputVal = document.getElementById("myInput").value;
-
-//     // Displaying the value
-//     alert(inputVal);
-// }
-
-// $(document).ready(function getInputValue() {
 function getInputValue() {
   const number = document.getElementById("myInput").value;
 
@@ -28,16 +15,15 @@ function getInputValue() {
     // print the next term
     console.log(nextTerm);
 
-    // for (let index = 0; index < 20; index++) {
-    //         $("#output").append(`<p>${nextTerm}</p>`);
-    //       }
-
-    document.write(nextTerm);
+    document.getElementById("output").innerHTML += `<p class="p">${
+      nextTerm + "&nbsp"
+    }</p>`;
 
     n1 = n2;
     n2 = nextTerm;
-    nextTerm = n1 + n2;    
+    nextTerm = n1 + n2;
   }
+  document.getElementById(
+    "title"
+  ).innerHTML = `<h3 > The requested Fibonacci Sequence is:</h3>`;
 }
-// });
-// ddsf
